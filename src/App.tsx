@@ -1,7 +1,8 @@
-import * as React from 'react'
+import { useRoutes } from 'react-router-dom'
+import { routes } from './router'
 
 function App() {
-  return <div className="App">app...</div>
+  return useRoutes(routes)
 }
 
 export default App
