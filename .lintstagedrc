@@ -1,0 +1,4 @@
+{
+  "src/**/*.{js,ts,jsx,tsx}": "yarn eslint",
+  "src/**/*.{css,less,scss}": "yarn stylelint"
+}
