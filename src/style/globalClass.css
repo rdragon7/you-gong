@@ -1,0 +1,15 @@
+.text-nowrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrap-v1 {
+  width: 1380px;
+  margin: 0 auto;
+}
+
+.wrap-v2 {
+  width: 1180px;
+  margin: 0 auto;
+}

@@ -7,8 +7,8 @@ module.exports = {
   extends: [
     'standard',
     'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended'
-    // "plugin:prettier/recommended"
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended'
   ],
   overrides: [],
   settings: {
@@ -22,6 +22,8 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
-    'space-before-function-paren': 0
+    'space-before-function-paren': 0,
+    '@typescript-eslint/no-explicit-any': ['off'],
+    'react/jsx-no-duplicate-props': 0
   }
 }

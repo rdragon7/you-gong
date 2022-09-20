@@ -1,40 +1,125 @@
-.zl-nav-bar-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.zl-header-wrapper {
+  position: relative;
+  z-index: 120;
   width: 100%;
-  height: 60px;
-  overflow: hidden;
-  color: #fff;
-  background-color: #000;
-  // logo
-  .logo {
-    width: 40px;
-    height: 40px;
+  height: 78px;
+  min-height: 66px;
+  font-size: 1rem;
+  background-color: var(--yougong-base-color);
+  border-bottom: 1px solid var(--yougong-base-color2);
+  box-shadow: 2px 0 10px rgb(0 0 0 / 20%);
+  @media screen and (min-width: 1025px) {
+    .container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 93.705%;
+      margin: 0 auto;
 
-    img {
-      width: 100%;
+      /* logo */
+      .logo {
+        width: 133px;
+        height: 78px;
+        min-height: 66px;
+        line-height: 78px;
+
+        img {
+          width: 45px;
+          height: 45px;
+        }
+      }
+
+      /* bar */
+      .bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        .list {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+
+          li {
+            height: 100%;
+            padding: 0 2%;
+            line-height: 78px;
+
+            &:hover {
+              div {
+                visibility: visible;
+              }
+
+              cursor: pointer;
+
+              a {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+
+      /* menu */
+      .menu {
+        display: none;
+        width: 44px;
+        height: 34px;
+      }
     }
   }
-  // 导航
-  .nav-bar {
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    position: relative;
     display: flex;
+    align-items: center;
+    width: 93.705%;
+    margin: 0 auto;
 
-    & > div {
-      width: 100px;
-      height: 60px;
-      line-height: 60px;
-      text-align: center;
+    /* logo */
+    .logo {
+      width: 133px;
+      height: 78px;
+      min-height: 66px;
+      line-height: 78px;
+
+      a {
+        text-decoration: none;
+      }
+
+      img {
+        width: 45px;
+        height: 45px;
+      }
     }
-  }
 
-  // 切换语言
-  .language {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    cursor: pointer;
-    user-select: none;
+    /* bar */
+    .bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* menu */
+    .menu {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      display: block;
+      transform: translate(0, -50%);
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
