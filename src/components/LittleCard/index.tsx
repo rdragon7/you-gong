@@ -1,0 +1,22 @@
+import * as React from 'react'
+
+import style from './style.module.less'
+
+const ZLLittleCard = (props: { icon: any; title: string; desc: string }) => {
+  // state & props
+  const { icon, title, desc } = props
+
+  return (
+    <div className={style.zlLittleCardWrapper}>
+      <div className={style.img}>
+        <img src={icon} alt="" />
+      </div>
+      <div className={style.content}>
+        <span className={style.title}>{title}</span>
+        <span className={style.desc}>{desc}</span>
+      </div>
+    </div>
+  )
+}
+
+export default ZLLittleCard

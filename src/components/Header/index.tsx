@@ -101,24 +101,24 @@ const ZLHeader = () => {
         getContainer="#root"
       >
         <ul className="antd-ul">
-          <li className="antd-li">
-            <span onClick={() => toLocation('/')}>网站首页</span>
+          <li className="antd-li" onClick={() => toLocation('/')}>
+            <span>网站首页</span>
             <span>&gt;</span>
           </li>
-          <li className="antd-li">
-            <span onClick={() => toLocation('/product')}>产品与服务</span>
+          <li className="antd-li" onClick={() => toLocation('/product')}>
+            <span>产品与服务</span>
             <span>&gt;</span>
           </li>
-          <li className="antd-li">
-            <span onClick={() => toLocation('/about')}>关于我们</span>
+          <li className="antd-li" onClick={() => toLocation('/about')}>
+            <span>关于我们</span>
             <span>&gt;</span>
           </li>
-          <li className="antd-li">
-            <span onClick={() => toLocation('/dynamic')}>公司动态</span>
+          <li className="antd-li" onClick={() => toLocation('/dynamic')}>
+            <span>公司动态</span>
             <span>&gt;</span>
           </li>
-          <li className="antd-li">
-            <span onClick={() => toLocation('/concat')}>联系我们</span>
+          <li className="antd-li" onClick={() => toLocation('/concat')}>
+            <span>联系我们</span>
             <span>&gt;</span>
           </li>
         </ul>

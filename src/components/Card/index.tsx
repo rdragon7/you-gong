@@ -11,9 +11,7 @@ const ZLCard = (props: { info: any }) => {
       <div className={style.img}>
         <img src={info.imgUrl} />
       </div>
-      <div className={style.desc + ' text-nowraps'}>
-        <span>{info.desc}</span>
-      </div>
+      <div className={style.desc}>{info.desc}</div>
     </div>
   )
 }
