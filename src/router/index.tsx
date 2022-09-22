@@ -8,6 +8,8 @@ const ZLCompanyIntro = lazy(() => import('@/pages/companyIntro'))
 const ZLStaff = lazy(() => import('@/pages/staff'))
 const ZLSolution = lazy(() => import('@/pages/solution'))
 const ZLFinance = lazy(() => import('@/pages/finance'))
+const ZLArithmetical = lazy(() => import('@/pages/arithmetical'))
+const ZLIndustry = lazy(() => import('@/pages/industry'))
 const ZLDynamic = lazy(() => import('@/pages/dynamic'))
 const ZLNotFound = lazy(() => import('@/pages/notFound'))
 
@@ -43,6 +45,14 @@ export const routes: RouteObject[] = [
       {
         path: 'finance',
         element: lazyLoad(<ZLFinance />)
+      },
+      {
+        path: 'arithmetical',
+        element: lazyLoad(<ZLArithmetical />)
+      },
+      {
+        path: 'industry',
+        element: lazyLoad(<ZLIndustry />)
       },
       {
         path: 'dynamic',

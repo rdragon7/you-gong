@@ -1,7 +1,5 @@
 import * as React from 'react'
 
-import { NavLink } from 'react-router-dom'
-
 import style from './style.module.less'
 
 const ZLCardThree = (props: { info: any }) => {

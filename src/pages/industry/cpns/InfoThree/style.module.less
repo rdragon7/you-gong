@@ -1,0 +1,68 @@
+.zl-industry-three-wrapper {
+  @media screen and (min-width: 992px) {
+    margin-top: 100px;
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      .right {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .left {
+        li {
+          display: flex;
+          align-items: center;
+          padding: 20px 0;
+
+          img {
+            width: 50px;
+            height: 50px;
+          }
+
+          div {
+            padding-left: 30px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    margin-top: 20px;
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+
+      .right {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .left {
+        li {
+          display: flex;
+          align-items: center;
+          padding: 10px 0;
+
+          img {
+            width: 50px;
+            height: 50px;
+          }
+
+          div {
+            padding-left: 30px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}

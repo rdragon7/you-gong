@@ -18,25 +18,29 @@ const ZLSolution = () => {
       id: 1,
       title: '产品溯源',
       desc: '创造有影响力的公司活动和形象',
-      icon: CarryOutOutlined
+      icon: CarryOutOutlined,
+      path: '/'
     },
     {
       id: 2,
       title: '资产保管',
       desc: '呈现出完美的舞台效果',
-      icon: FormOutlined
+      icon: FormOutlined,
+      path: '/'
     },
     {
       id: 3,
       title: '算力管理与运营',
       desc: '展会、展厅、文化馆等专业设计',
-      icon: FundOutlined
+      icon: FundOutlined,
+      path: '/arithmetical'
     },
     {
       id: 4,
       title: '行业解决方案',
       desc: '专业影视制作团队,量身定制',
-      icon: SettingOutlined
+      icon: SettingOutlined,
+      path: '/industry'
     }
   ])
 
