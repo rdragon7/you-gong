@@ -22,6 +22,7 @@
     "antd": "^4.23.2",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
+    "react-amap": "^1.2.8",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.0"
   },

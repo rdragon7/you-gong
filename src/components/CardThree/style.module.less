@@ -1,0 +1,65 @@
+.zl-card-three-wrapper {
+  @media screen and (min-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 460px;
+    padding: 60px 35px;
+    box-shadow: 0 5px 30px rgb(15 91 183 / 10%);
+
+    .icon {
+      width: 100%;
+      height: 210px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .desc {
+      text-align: center;
+
+      span:first-child {
+        font-size: 1.25rem;
+      }
+
+      span:last-child {
+        font-size: 0.75rem;
+        color: var(--yougong-base-color8);
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 460px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 30px rgb(15 91 183 / 10%);
+
+    .icon {
+      width: 100%;
+      height: 70%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .desc {
+      text-align: center;
+
+      span:first-child {
+        font-size: 1.25rem;
+      }
+
+      span:last-child {
+        font-size: 0.75rem;
+        color: var(--yougong-base-color8);
+      }
+    }
+  }
+}

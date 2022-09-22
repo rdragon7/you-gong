@@ -8,12 +8,18 @@ import icon4 from '@/assets/images/home/icon4.png'
 import icon5 from '@/assets/images/home/icon5.png'
 import icon6 from '@/assets/images/home/icon6.png'
 import icon7 from '@/assets/images/home/icon7.png'
+import back2 from '@/assets/images/home/back2.png'
 
 const ZLInfoFive = () => {
   // state & props
 
+  // handles
+  const infoFiveStyle = {
+    background: `url(${back2})`
+  }
+
   return (
-    <div className={style.zlInfoFiveWrapper}>
+    <div className={style.zlInfoFiveWrapper} style={infoFiveStyle}>
       <h2 className={style.title}>“区块链技术”加持，让信息更透明</h2>
       <div className={style.content}>
         <div className={style.left}>

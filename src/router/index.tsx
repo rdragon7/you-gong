@@ -3,8 +3,13 @@ import { RouteObject } from 'react-router-dom'
 
 import ZLLayout from '@/pages/layout'
 const ZLHome = lazy(() => import('@/pages/home'))
-const ZLProduct = lazy(() => import('@/pages/product'))
+const ZLConcat = lazy(() => import('@/pages/concat'))
+const ZLCompanyIntro = lazy(() => import('@/pages/companyIntro'))
+const ZLStaff = lazy(() => import('@/pages/staff'))
+const ZLSolution = lazy(() => import('@/pages/solution'))
+const ZLFinance = lazy(() => import('@/pages/finance'))
 const ZLDynamic = lazy(() => import('@/pages/dynamic'))
+const ZLNotFound = lazy(() => import('@/pages/notFound'))
 
 const lazyLoad = (children: ReactNode): ReactNode => {
   return <Suspense fallback={<h1>loading...</h1>}>{children}</Suspense>
@@ -20,12 +25,32 @@ export const routes: RouteObject[] = [
         element: lazyLoad(<ZLHome />)
       },
       {
-        path: 'product',
-        element: lazyLoad(<ZLProduct />)
+        path: 'concat',
+        element: lazyLoad(<ZLConcat />)
+      },
+      {
+        path: 'intro',
+        element: lazyLoad(<ZLCompanyIntro />)
+      },
+      {
+        path: 'staff',
+        element: lazyLoad(<ZLStaff />)
+      },
+      {
+        path: 'solution',
+        element: lazyLoad(<ZLSolution />)
+      },
+      {
+        path: 'finance',
+        element: lazyLoad(<ZLFinance />)
       },
       {
         path: 'dynamic',
         element: lazyLoad(<ZLDynamic />)
+      },
+      {
+        path: '*',
+        element: lazyLoad(<ZLNotFound />)
       }
     ]
   }

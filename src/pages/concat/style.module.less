@@ -1,0 +1,56 @@
+.zl-concat-wrapper {
+  @media screen and (min-width: 992px) {
+    .content {
+      display: grid;
+      grid-template-columns: 45% 55%;
+      width: 60%;
+      padding: 120px 0;
+      margin: 0 auto;
+
+      .info {
+        .title {
+          padding-bottom: 20px;
+          margin-right: 100px;
+          border-bottom: 2px solid var(--yougong-base-color2);
+        }
+
+        .desc {
+          margin-top: 20px;
+
+          li {
+            padding: 10px 0;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      width: 98%;
+      padding: 40px 0;
+      margin: 0 auto;
+
+      .info {
+        .title {
+          padding-bottom: 20px;
+          margin-right: 100px;
+          border-bottom: 2px solid var(--yougong-base-color2);
+        }
+
+        .desc {
+          margin-top: 20px;
+
+          li {
+            padding: 10px 0;
+          }
+        }
+      }
+
+      .map {
+        height: 300px;
+      }
+    }
+  }
+}

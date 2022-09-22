@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import ZLCarousel from './cpns/Carousel'
+import ZLCarousel from '@/components/Carousel'
 import ZLInfoOne from './cpns/InfoOne'
 import ZLInfoTwo from './cpns/InfoTwo'
 import ZLInfoThree from './cpns/InfoThree'

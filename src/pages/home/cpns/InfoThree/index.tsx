@@ -2,10 +2,16 @@ import * as React from 'react'
 
 import style from './style.module.less'
 import info8 from '@/assets/images/home/info8.png'
+import back1 from '@/assets/images/home/back1.jpg'
 
 const ZLInfoThree = () => {
+  // handles
+  const infoThreeStyle = {
+    background: `url(${back1})`
+  }
+
   return (
-    <div className={style.zlInfoThreeWrapper}>
+    <div className={style.zlInfoThreeWrapper} style={infoThreeStyle}>
       <h2 className={style.title}>
         物联网+区块链：从源头到终端为客户提供解决方案
       </h2>

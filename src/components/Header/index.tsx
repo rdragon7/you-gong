@@ -14,29 +14,35 @@ const ZLHeader = () => {
   const [product] = React.useState([
     {
       id: 1,
-      title: '金融服务与数字化转型'
+      title: '金融服务与数字化转型',
+      path: '/finance'
     },
     {
       id: 2,
-      title: '区块链技术与行业解决方案'
+      title: '区块链技术与行业解决方案',
+      path: '/solution'
     }
   ])
   const [about] = React.useState([
     {
       id: 1,
-      title: '公司简介'
+      title: '公司简介',
+      path: '/intro'
     },
     {
       id: 2,
-      title: '员工概况'
+      title: '员工概况',
+      path: '/staff'
     },
     {
       id: 3,
-      title: '资质荣誉'
+      title: '资质荣誉',
+      path: '/intro'
     },
     {
       id: 4,
-      title: '未知'
+      title: '未知',
+      path: '/intro'
     }
   ])
   const [visible, setVisible] = React.useState(false)
