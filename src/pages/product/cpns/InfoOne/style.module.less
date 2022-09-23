@@ -1,0 +1,60 @@
+.zl-product-info-one-wrapper {
+  @media screen and (min-width: 992px) {
+    .content {
+      .intro {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        font-size: 0.75rem;
+        color: var(--yougong-base-color7);
+      }
+
+      .title {
+        padding: 20px 0;
+      }
+
+      .new {
+        .content {
+          .new-top {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+          }
+
+          .new-bottom {
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .content {
+      .intro {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        font-size: 0.75rem;
+        color: var(--yougong-base-color7);
+      }
+
+      .title {
+        padding: 20px 0;
+      }
+
+      .new {
+        .content {
+          .new-top {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+          }
+
+          .new-bottom {
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+  }
+}

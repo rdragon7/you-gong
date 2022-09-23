@@ -2,9 +2,14 @@ import * as React from 'react'
 
 import style from './style.module.less'
 
-const ZLLittleCard = (props: { icon: any; title: string; desc: string }) => {
+const ZLLittleCard = (props: {
+  icon: any
+  title?: string
+  desc: string
+  imgTitle?: string
+}) => {
   // state & props
-  const { icon, title, desc } = props
+  const { icon, title, desc, imgTitle } = props
 
   return (
     <div className={style.zlLittleCardWrapper}>

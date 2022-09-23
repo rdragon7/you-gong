@@ -1,5 +1,11 @@
 import * as React from 'react'
 
+import ZLProductInfoOne from './cpns/InfoOne'
+import ZLProductInfoTwo from './cpns/InfoTwo'
+import ZLProductInfoThree from './cpns/InfoThree'
+import ZLProductInfoFour from './cpns/InfoFour'
+import ZLProductInfoFive from './cpns/InfoFive'
+
 import style from './style.module.less'
 import lunbo1 from '@/assets/images/home/lunbo1.png'
 
@@ -19,6 +25,11 @@ const ZLProduct = () => {
           <span className={style.titleOne}>产品溯源&nbsp;/&nbsp;</span>
           <span className={style.titleTwo}>product traceability</span>
         </h2>
+        <ZLProductInfoOne />
+        <ZLProductInfoTwo />
+        <ZLProductInfoThree />
+        <ZLProductInfoFour />
+        <ZLProductInfoFive />
       </div>
     </div>
   )

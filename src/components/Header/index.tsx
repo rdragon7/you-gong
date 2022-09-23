@@ -46,8 +46,7 @@ const ZLHeader = () => {
     }
   ])
   const [visible, setVisible] = React.useState(false)
-  const [placement, setPlacement] =
-    React.useState<DrawerProps['placement']>('left')
+  const [placement] = React.useState<DrawerProps['placement']>('left')
 
   // other hooks
   const navigate = useNavigate()
