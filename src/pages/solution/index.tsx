@@ -19,7 +19,7 @@ const ZLSolution = () => {
       title: '产品溯源',
       desc: '创造有影响力的公司活动和形象',
       icon: CarryOutOutlined,
-      path: '/'
+      path: '/product'
     },
     {
       id: 2,
