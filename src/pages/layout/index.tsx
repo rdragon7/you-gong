@@ -5,6 +5,7 @@ import ZLHeader from '@/components/Header'
 
 import style from './style.module.less'
 import ZLFooter from '@/components/Footer'
+import ZLSlider from '@/components/Slider'
 
 const ZLLayout = () => {
   return (
@@ -13,6 +14,7 @@ const ZLLayout = () => {
       <div className={style.content}>
         <Outlet />
       </div>
+      <ZLSlider />
       <ZLFooter />
     </div>
   )

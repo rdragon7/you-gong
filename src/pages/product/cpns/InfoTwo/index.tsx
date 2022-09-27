@@ -22,6 +22,10 @@ import product21 from '@/assets/images/product/product21.png'
 import product22 from '@/assets/images/product/product22.png'
 import product23 from '@/assets/images/product/product23.png'
 import product24 from '@/assets/images/product/product24.png'
+import product35 from '@/assets/images/product/product35.png'
+import product36 from '@/assets/images/product/product36.png'
+import product37 from '@/assets/images/product/product37.png'
+import product38 from '@/assets/images/product/product38.png'
 
 const ZLProductInfoTwo = () => {
   return (
@@ -228,7 +232,56 @@ const ZLProductInfoTwo = () => {
         </div>
         <div className={style.contentFive}>
           <h2 className={style.title}>溯源流程</h2>
-          <div className={style.content}>TODO</div>
+          <div className={style.content}>
+            <ul className={style.left}>
+              <li>
+                <div className={style.icon}>
+                  <ZLIcon icon={product37} />
+                </div>
+                <div className={style.desc}>
+                  <span>商品入驻</span>
+                  <br />
+                  <span>
+                    生产方提交入驻申请，平台方对入驻商品进行审核。如审核通过，平台方签发溯源标签给生产方。
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div className={style.icon}>
+                  <ZLIcon icon={product38} />
+                </div>
+                <div className={style.desc}>
+                  <span>生产方激活标签</span>
+                  <br />
+                  <span>
+                    生产放将溯源标签贴于包装上后，利用激活设备激活标签。标签被激活后会和商品绑定并上链。
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div className={style.icon}>
+                  <ZLIcon icon={product35} />
+                </div>
+                <div className={style.desc}>
+                  <span>物流商记录流通信息</span>
+                  <br />
+                  <span>物流商记录商品物流数据，物流数据上链。</span>
+                </div>
+              </li>
+              <li>
+                <div className={style.icon}>
+                  <ZLIcon icon={product36} />
+                </div>
+                <div className={style.desc}>
+                  <span>消费者防伪验真及溯源信息查询</span>
+                  <br />
+                  <span>
+                    终端消费者通过溯源码和防伪码对商品进行防伪验真及溯源信息查询。
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

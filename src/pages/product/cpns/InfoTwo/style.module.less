@@ -89,6 +89,32 @@
 
       .content-five {
         margin-top: 40px;
+
+        .content {
+          .left {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+
+            li {
+              display: flex;
+              align-items: center;
+
+              .desc {
+                padding-left: 24px;
+
+                span:first-child {
+                  font-weight: 700;
+                }
+
+                span:last-child {
+                  font-size: 14px;
+                  color: var(--yougong-base-color7);
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -170,7 +196,33 @@
       }
 
       .content-five {
-        margin-top: 40px;
+        margin-top: 20px;
+
+        .content {
+          .left {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 40px;
+
+            li {
+              display: flex;
+              align-items: center;
+
+              .desc {
+                padding-left: 24px;
+
+                span:first-child {
+                  font-weight: 700;
+                }
+
+                span:last-child {
+                  font-size: 14px;
+                  color: var(--yougong-base-color7);
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

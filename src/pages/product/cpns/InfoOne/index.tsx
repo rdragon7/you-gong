@@ -3,16 +3,17 @@ import * as React from 'react'
 import ZLTitle from '@/components/Title'
 import ZLLittleCard from '@/components/LittleCard'
 import ZLCardFour from '@/components/CardFour'
+import ZLIcon from '@/components/Icon'
 
 import style from './style.module.less'
 import product1 from '@/assets/images/product/product1.png'
 import product2 from '@/assets/images/product/product2.png'
 import product3 from '@/assets/images/product/product3.png'
-import product4 from '@/assets/images/product/product4.png'
-import product5 from '@/assets/images/product/product5.png'
-import product6 from '@/assets/images/product/product6.png'
-import product7 from '@/assets/images/product/product7.png'
 import product8 from '@/assets/images/product/product8.png'
+import product33 from '@/assets/images/product/product33.png'
+import product34 from '@/assets/images/product/product34.png'
+import product35 from '@/assets/images/product/product35.png'
+import product36 from '@/assets/images/product/product36.png'
 
 const ZLProductInfoOne = () => {
   return (
@@ -35,7 +36,58 @@ const ZLProductInfoOne = () => {
         </div>
         <div className={style.target}>
           <h2 className={style.title}>建设目标</h2>
-          <div className={style.targetContent}>TODO</div>
+          <div className={style.targetContent}>
+            <ul className={style.left}>
+              <li>
+                <div className={style.icon}>
+                  <ZLIcon icon={product33} />
+                </div>
+                <div className={style.desc}>
+                  <span>流通数据全程上链</span>
+                  <br />
+                  <span>
+                    将生产流通数据上链后，各参与主体可以共享数据，降低各主体间的通讯协作成本。
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div className={style.icon}>
+                  <ZLIcon icon={product34} />
+                </div>
+                <div className={style.desc}>
+                  <span>溯源数据防篡改溯源链提供信用背书</span>
+                  <br />
+                  <span>
+                    利用区块链的共识机制的特性，平台参与方共同对数据真实性做背书，并且平台提供交叉验证。充分保证数据的真实可信。
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div className={style.icon}>
+                  <ZLIcon icon={product35} />
+                </div>
+                <div className={style.desc}>
+                  <span>掌握终端销售数据为参与方提供参考</span>
+                  <br />
+                  <span>
+                    利用终端用户防伪查询的机会，获取产品用户的消费行为。并对消费数据分析处理后提供给生产商和销售商，为生产和销售决策提供数据支撑。
+                  </span>
+                </div>
+              </li>
+              <li>
+                <div className={style.icon}>
+                  <ZLIcon icon={product36} />
+                </div>
+                <div className={style.desc}>
+                  <span>平台数据统计分析</span>
+                  <br />
+                  <span>
+                    对平台的湖源数据及消费者验证查询数据进行统计分析，将结果整理后握供给入驻商家。
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className={style.new}>
           <h2 className={style.title}>新技术融合</h2>
