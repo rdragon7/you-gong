@@ -9,7 +9,7 @@ const ZLLittleCard = (props: {
   imgTitle?: string
 }) => {
   // state & props
-  const { icon, title, desc, imgTitle } = props
+  const { icon, title, desc } = props
 
   return (
     <div className={style.zlLittleCardWrapper}>

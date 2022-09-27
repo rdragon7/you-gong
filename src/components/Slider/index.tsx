@@ -15,7 +15,7 @@ const ZLSlider = () => {
   const [show, setShow] = React.useState(false)
 
   React.useEffect(() => {
-    const handleScroll = (e: any) => {
+    const handleScroll = () => {
       if (window.scrollY > window.innerHeight) {
         setShow(true)
       } else {
