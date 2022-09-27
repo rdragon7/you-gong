@@ -5,8 +5,6 @@ import { Carousel } from 'antd'
 import style from './style.module.less'
 import lunbo1 from '@/assets/images/home/lunbo1.png'
 import lunbo2 from '@/assets/images/home/lunbo2.jpg'
-import lunbo3 from '@/assets/images/home/lunbo3.jpg'
-import lunbo4 from '@/assets/images/home/lunbo4.jpg'
 
 const ZLCarousel = () => {
   // state & props
@@ -18,14 +16,6 @@ const ZLCarousel = () => {
     {
       id: 2,
       src: lunbo2
-    },
-    {
-      id: 3,
-      src: lunbo3
-    },
-    {
-      id: 4,
-      src: lunbo4
     }
   ])
 

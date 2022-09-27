@@ -1,8 +1,7 @@
 import * as React from 'react'
 
 import { NavLink, useNavigate } from 'react-router-dom'
-import ZLModel from '../Model'
-import { Drawer } from 'antd'
+import { Drawer, Dropdown, Menu, Space } from 'antd'
 import type { DrawerProps } from 'antd/es/drawer'
 import { MenuOutlined } from '@ant-design/icons'
 
@@ -11,40 +10,6 @@ import logo from '@/assets/images/common/logo.png'
 
 const ZLHeader = () => {
   // state & props
-  const [product] = React.useState([
-    {
-      id: 1,
-      title: '金融服务与数字化转型',
-      path: '/finance'
-    },
-    {
-      id: 2,
-      title: '区块链技术与行业解决方案',
-      path: '/solution'
-    }
-  ])
-  const [about] = React.useState([
-    {
-      id: 1,
-      title: '公司简介',
-      path: '/intro'
-    },
-    {
-      id: 2,
-      title: '员工概况',
-      path: '/staff'
-    },
-    {
-      id: 3,
-      title: '资质荣誉',
-      path: '/intro'
-    },
-    {
-      id: 4,
-      title: '未知',
-      path: '/intro'
-    }
-  ])
   const [visible, setVisible] = React.useState(false)
   const [placement] = React.useState<DrawerProps['placement']>('left')
 
@@ -62,6 +27,34 @@ const ZLHeader = () => {
     setVisible(false)
     navigate(location)
   }
+  const menuOne = (
+    <Menu
+      items={[
+        {
+          key: '1',
+          label: <NavLink to="/finance">金融服务与数字化转型</NavLink>
+        },
+        {
+          key: '2',
+          label: <NavLink to="/solution">区块链技术与行业解决方案</NavLink>
+        }
+      ]}
+    />
+  )
+  const menuTwo = (
+    <Menu
+      items={[
+        {
+          key: '1',
+          label: <NavLink to="/intro">公司简介</NavLink>
+        },
+        {
+          key: '2',
+          label: <NavLink to="/staff">员工概况</NavLink>
+        }
+      ]}
+    />
+  )
 
   return (
     <header className={style.zlHeaderWrapper}>
@@ -78,12 +71,18 @@ const ZLHeader = () => {
               <NavLink to="/">网站首页</NavLink>
             </li>
             <li>
-              <NavLink to="/product">产品与服务</NavLink>
-              <ZLModel info={product} />
+              <Dropdown overlay={menuOne} placement={'bottom'}>
+                <a onClick={(e) => e.preventDefault()}>
+                  <Space>产品与服务</Space>
+                </a>
+              </Dropdown>
             </li>
             <li>
-              <NavLink to="/about">关于我们</NavLink>
-              <ZLModel info={about} />
+              <Dropdown overlay={menuTwo} placement={'bottom'}>
+                <a onClick={(e) => e.preventDefault()}>
+                  <Space>关于我们</Space>
+                </a>
+              </Dropdown>
             </li>
             <li>
               <NavLink to="/dynamic">公司动态</NavLink>
