@@ -10,7 +10,7 @@ const ZLFooter = () => {
         <p>版权所有&copy;杭州友恭科技有限公司</p>
         <p className={style.shou}>
           售后：0571-86772312&nbsp;&nbsp;&nbsp;&nbsp;邮箱：surport@yougong.com
-          &nbsp;&nbsp;&nbsp;&nbsp;微信公众号：xxxxx
+          &nbsp;&nbsp;&nbsp;&nbsp;微信公众号：gh_4a066d82e2fd
         </p>
         <p className={style.concat}>
           <NavLink to="/concat">联系我们</NavLink>

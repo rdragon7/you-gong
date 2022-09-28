@@ -17,7 +17,8 @@ const ZLLittleCard = (props: {
         <img src={icon} alt="" />
       </div>
       <div className={style.content}>
-        <span className={style.title}>{title}</span>
+        {title ? <span className={style.title}>{title}</span> : null}
+
         <span className={style.desc}>{desc}</span>
       </div>
     </div>

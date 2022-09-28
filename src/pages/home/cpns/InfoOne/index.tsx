@@ -47,7 +47,7 @@ const ZLInfoOne = () => {
 
   return (
     <div className={style.zlInfoOneWrapper}>
-      <h2 className={style.title}>区块链技术加特“防伪、溯源、验真”彻底颠覆</h2>
+      <h2 className={style.title}>区块链技术加持“防伪、溯源、验真”彻底颠覆</h2>
       <div className={style.content}>
         {infoOne.map((item: any) => {
           return (

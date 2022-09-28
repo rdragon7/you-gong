@@ -35,7 +35,6 @@ const ZLInfoFive = () => {
               desc="每一笔数据的记录都需要每个节点的共识才能完成，如果没有达成共识，交易将自动失败。"
             />
           </div>
-          <div className={style.card}></div>
         </div>
         <div className={style.center}>
           <img src={info12} alt="" />

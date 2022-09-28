@@ -17,7 +17,9 @@ const ZLHome = () => {
 
   return (
     <div className={style.zlHomeWrapper}>
-      <ZLCarousel />
+      <div className={style.carousel}>
+        <ZLCarousel />
+      </div>
       <div className={style.container}>
         <ZLInfoOne />
         <ZLInfoTwo />

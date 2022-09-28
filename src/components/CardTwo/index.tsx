@@ -15,8 +15,6 @@ const ZLCardTwo = (props: { info: any }) => {
       </div>
       <div className={style.desc}>
         <span>{info.title}</span>
-        <br />
-        <span>{info.desc}</span>
       </div>
       <div className={style.go}>
         <NavLink to={info.path}>

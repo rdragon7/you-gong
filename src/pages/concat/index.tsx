@@ -18,7 +18,7 @@ const ZLConcat = () => {
           <ul className={style.desc}>
             <li>联系电话：0571-86772312</li>
             <li>售后电话：0571-86778673</li>
-            <li>微信公众号：xxx</li>
+            <li>微信公众号：gh_4a066d82e2fd</li>
             <li>联系邮箱：surport@yougong.com</li>
             <li>总部地址：杭州市西湖区西溪银泰南2楼7层703室</li>
           </ul>

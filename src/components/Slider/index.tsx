@@ -51,7 +51,7 @@ const ZLSlider = () => {
     <div className={style.zlSliderWrapper}>
       <ul className={style.box}>
         <li className={style.list + ' ' + style.phone}>
-          <a href="javascript:void(0);">
+          <a href="/#" onClick={(e) => e.preventDefault()} rel="noreferrer">
             <PhoneOutlined />
           </a>
           <ul className={style.menu}>
@@ -61,7 +61,7 @@ const ZLSlider = () => {
           </ul>
         </li>
         <li className={style.list + ' ' + style.clock}>
-          <a href="javascript:void(0);">
+          <a href="/#" onClick={(e) => e.preventDefault()} rel="noreferrer">
             <ClockCircleOutlined />
           </a>
           <ul className={style.menu}>
@@ -70,7 +70,7 @@ const ZLSlider = () => {
           </ul>
         </li>
         <li className={style.list + ' ' + style.code}>
-          <a href="javascript:void(0);">
+          <a href="/#" onClick={(e) => e.preventDefault()} rel="noreferrer">
             <WechatOutlined />
           </a>
           <ul className={style.menu}>
@@ -81,7 +81,7 @@ const ZLSlider = () => {
           </ul>
         </li>
         <li className={style.list + ' ' + style.up} onClick={backUp}>
-          <a href="javascript:void(0);">
+          <a href="/#" onClick={(e) => e.preventDefault()} rel="noreferrer">
             <ArrowUpOutlined />
           </a>
         </li>

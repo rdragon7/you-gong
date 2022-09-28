@@ -36,16 +36,10 @@
 
       .center {
         height: 380px;
+        line-height: 380px;
 
         img {
           width: 100%;
-          height: 100%;
-        }
-      }
-
-      .card {
-        & > div {
-          // margin-bottom: 40px;s
         }
       }
     }
@@ -53,6 +47,8 @@
   @media screen and (max-width: 992px) {
     .title {
       padding: 40px 0;
+      font-size: 1.25rem;
+      font-weight: 700;
     }
 
     .content {
@@ -63,19 +59,20 @@
       .center {
         img {
           width: 100%;
-          height: 100%;
         }
       }
 
       .left {
-        div > div:first-of-type {
-          margin-bottom: 20px;
+        & > div {
+          display: grid;
+          row-gap: 20px;
         }
       }
 
       .right {
-        div > div:first-of-type {
-          margin-bottom: 20px;
+        & > div {
+          display: grid;
+          row-gap: 20px;
         }
       }
     }

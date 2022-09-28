@@ -23,22 +23,19 @@ const ZLCompanyIntro = () => {
       </div>
       <div className={style.info}>
         <h2 className={style.title}>简介</h2>
-        <div className={style.desc}>
+        <div className={style.descOne}>
+          <p className={style.origin}>
+            友恭的名字源于《史记》 -
+            “兄友弟恭，内平外成”，形容兄弟间互爱互敬。团队从2014年相聚开始就秉承着兄弟齐心，其利断金的信念，共同渡过挑战起伏，在数字化转型、金融科技和区块链技术上都积累了丰富经验。
+          </p>
+        </div>
+        <div className={style.descTwo}>
           <img src={intro5} alt="" />
-          <div className={style.item}>
-            <div className={style.left}>
-              <h3 className={style.ll}>名字起源</h3>
-              <p className={style.origin}>
-                友恭的名字源于《史记》 -
-                “兄友弟恭，内平外成”，形容兄弟间互爱互敬。团队从2014年相聚开始就秉承着兄弟齐心，其利断金的信念，共同渡过挑战起伏，在数字化转型、金融科技和区块链技术上都积累了丰富经验。
-              </p>
-            </div>
-            <div className={style.right}>
-              <h3 className={style.ll}>积累沉淀</h3>
-              <p className={style.origin}>
-                公司成立的时间虽短，但创始团队在金融科技领域有长期的实践，在中后台业务系统上有丰富经验。从2014年开始就在区块链和数字化技术上也开展了研究和项目实践，有溯源系统、矿池系统和密钥管理系统的开发维护经验，有数字社区与生产管理系统的开发维护经验。
-              </p>
-            </div>
+          <div className={style.right}>
+            <h3 className={style.ll}>积累沉淀</h3>
+            <p className={style.origin}>
+              公司成立的时间虽短，但创始团队在金融科技领域有长期的实践，在中后台业务系统上有丰富经验。从2014年开始就在区块链和数字化技术上也开展了研究和项目实践，有溯源系统、矿池系统和密钥管理系统的开发维护经验，有数字社区与生产管理系统的开发维护经验。
+            </p>
           </div>
         </div>
       </div>

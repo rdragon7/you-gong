@@ -48,22 +48,24 @@ const ZLProductInfoFour = () => {
               className={style.l}
               style={{ backgroundImage: `url(${product28})` }}
             >
-              <h3>公众号开发与代运营</h3>
-              <ul>
-                <li>企业形象</li>
-                <li>新品推荐</li>
-                <li>渠道管理</li>
-                <li>用户支持</li>
-                <li>公众号管理</li>
-              </ul>
+              <div className={style.info}>
+                <h3 className={style.infoTitle}>公众号开发与代运营</h3>
+                <ul className={style.infoDesc}>
+                  <li>企业形象</li>
+                  <li>新品推荐</li>
+                  <li>渠道管理</li>
+                  <li>用户支持</li>
+                  <li>公众号管理</li>
+                </ul>
+              </div>
             </div>
             <div
               className={style.r}
               style={{ backgroundImage: `url(${product29})` }}
             >
-              <div>
-                <h3>智能营销代运营</h3>
-                <ul>
+              <div className={style.info}>
+                <h3 className={style.infoTitle}>智能营销代运营</h3>
+                <ul className={style.infoDesc}>
                   <li>会员积分管理</li>
                   <li>在线商城管理</li>
                   <li>渠道管理</li>

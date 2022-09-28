@@ -13,9 +13,10 @@ const ZLIndustry = lazy(() => import('@/pages/industry'))
 const ZLProduct = lazy(() => import('@/pages/product'))
 const ZLDynamic = lazy(() => import('@/pages/dynamic'))
 const ZLNotFound = lazy(() => import('@/pages/notFound'))
+const ZLLoading = lazy(() => import('@/pages/loading'))
 
 const lazyLoad = (children: ReactNode): ReactNode => {
-  return <Suspense fallback={<h1>loading...</h1>}>{children}</Suspense>
+  return <Suspense fallback={<ZLLoading />}>{children}</Suspense>
 }
 
 export const routes: RouteObject[] = [

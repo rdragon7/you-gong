@@ -10,7 +10,7 @@
         height: 100%;
       }
 
-      .desc {
+      .desc-one {
         position: absolute;
         top: 60px;
         left: 20%;
@@ -45,7 +45,7 @@
       text-align: center;
 
       .title {
-        width: 350px;
+        width: 30%;
         padding-bottom: 10px;
         margin: 0 auto;
         font-size: 1.625rem;
@@ -53,10 +53,23 @@
         border-bottom: 2px solid var(--yougong-base-color3);
       }
 
-      .desc {
+      .desc-one {
+        width: 60%;
+        margin: 0 auto;
+        overflow: hidden;
+        font-size: 0.875rem;
+        color: var(--yougong-base-color7);
+
+        .origin {
+          margin-top: 10px;
+        }
+      }
+
+      .desc-two {
         position: relative;
-        height: 500px;
-        margin-top: 20px;
+        height: 600px;
+        margin-top: 40px;
+        font-size: 0.875rem;
         color: var(--yougong-base-color);
 
         img {
@@ -64,25 +77,23 @@
           height: 100%;
         }
 
-        .item {
+        .right {
           position: absolute;
-          top: 0;
-          left: 0;
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 200px;
-          padding: 10px 200px;
-
-          .origin {
-            font-size: 0.875rem;
-            line-height: 80px;
-            text-align: left;
-            text-indent: 2em;
-          }
+          top: 20%;
+          left: 50%;
+          transform: translateX(-50%);
 
           .ll {
-            padding: 20px 0;
-            color: var(--yougong-base-color6);
+            width: 30%;
+            padding: 10px 0;
+            margin: 0 auto;
+            font-size: 1.5rem;
+            color: var(--yougong-base-color);
+            border-bottom: 2px solid var(--yougong-base-color3);
+          }
+
+          .origin {
+            margin-top: 20px;
           }
         }
       }
@@ -128,7 +139,7 @@
   @media screen and (max-width: 992px) {
     .header {
       position: relative;
-      height: 160px;
+      height: 140px;
       color: var(--yougong-base-color);
 
       img {
@@ -165,13 +176,13 @@
     }
 
     .info {
-      width: 98%;
+      width: 90%;
       margin: 0 auto;
       margin-top: 20px;
       text-align: center;
 
       .title {
-        width: 98%;
+        width: 80%;
         padding-bottom: 10px;
         margin: 0 auto;
         font-size: 1.625rem;
@@ -179,10 +190,22 @@
         border-bottom: 2px solid var(--yougong-base-color3);
       }
 
-      .desc {
+      .desc-one {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        font-size: 0.875rem;
+        color: var(--yougong-base-color7);
+
+        .origin {
+          margin-top: 10px;
+        }
+      }
+
+      .desc-two {
         position: relative;
         height: 200px;
-        margin-top: 20px;
+        margin-top: 30px;
         color: var(--yougong-base-color);
 
         img {
@@ -190,26 +213,22 @@
           height: 100%;
         }
 
-        .item {
+        .right {
           position: absolute;
-          top: 0;
+          top: 50%;
           left: 0;
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 30px;
-          height: 200px;
-          padding: 0 24px 24px;
-          overflow: hidden;
-
-          .origin {
-            font-size: 0.75rem;
-            text-align: left;
-            text-indent: 2em;
-          }
+          padding: 10px;
+          transform: translateY(-50%);
 
           .ll {
-            padding: 20px 0;
-            color: var(--yougong-base-color6);
+            display: none;
+          }
+
+          .origin {
+            width: 100%;
+            margin-top: 20px;
+            font-size: 0.75rem;
+            color: var(--yougong-base-color3);
           }
         }
       }
