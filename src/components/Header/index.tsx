@@ -84,9 +84,9 @@ const ZLHeader = () => {
                 </a>
               </Dropdown>
             </li>
-            <li>
+            {/*  <li>
               <NavLink to="/dynamic">公司动态</NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink to="/concat">联系我们</NavLink>
             </li>
@@ -117,10 +117,10 @@ const ZLHeader = () => {
             <span>关于我们</span>
             <span>&gt;</span>
           </li>
-          <li className="antd-li" onClick={() => toLocation('/dynamic')}>
+          {/* <li className="antd-li" onClick={() => toLocation('/dynamic')}>
             <span>公司动态</span>
             <span>&gt;</span>
-          </li>
+          </li> */}
           <li className="antd-li" onClick={() => toLocation('/concat')}>
             <span>联系我们</span>
             <span>&gt;</span>
