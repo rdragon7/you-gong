@@ -13,9 +13,6 @@ const ZLStaff = () => {
           <span className={style.itemOne}>
             致力于提供更专业的基于区块链的溯源系统
           </span>
-          <br />
-          <span className={style.itemTwo}>杭州友恭科技</span>
-          <div className={style.itemThree}>我们的服务</div>
         </div>
       </div>
       <div className={style.content}>
