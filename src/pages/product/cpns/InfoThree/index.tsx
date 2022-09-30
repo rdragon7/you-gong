@@ -61,7 +61,7 @@ const ZLProductInfoThree = () => {
           <div className={style.con}>
             <ZLCardFive
               imgUrl={product26}
-              title={['ERP系统', '仓储物流系统', '仓储物流系统']}
+              title={['ERP系统', '仓储物流系统', '营销体系管理']}
               imgTitle="考虑与企业现有IT系统集成"
             />
             <ZLCardFive
