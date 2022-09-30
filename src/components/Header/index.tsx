@@ -68,7 +68,7 @@ const ZLHeader = () => {
         <div className={style.bar}>
           <ul className={style.list}>
             <li>
-              <NavLink to="/">网站首页</NavLink>
+              <NavLink to="/">首页</NavLink>
             </li>
             <li>
               <Dropdown overlay={menuOne} placement={'bottom'}>
@@ -106,7 +106,7 @@ const ZLHeader = () => {
       >
         <ul className="antd-ul">
           <li className="antd-li" onClick={() => toLocation('/')}>
-            <span>网站首页</span>
+            <span>首页</span>
             <span>&gt;</span>
           </li>
           <li className="antd-li" onClick={() => toLocation('/product')}>
