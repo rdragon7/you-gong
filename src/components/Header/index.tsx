@@ -3,7 +3,7 @@ import * as React from 'react'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { Drawer, Dropdown, Menu, Space } from 'antd'
 import type { DrawerProps } from 'antd/es/drawer'
-import { MenuOutlined } from '@ant-design/icons'
+import { MenuOutlined, DownOutlined, UpOutlined } from '@ant-design/icons'
 
 import style from './style.module.less'
 import logo from '@/assets/images/common/logo.png'
@@ -11,6 +11,8 @@ import logo from '@/assets/images/common/logo.png'
 const ZLHeader = () => {
   // state & props
   const [visible, setVisible] = React.useState(false)
+  const [productVisible, setProductVisible] = React.useState(false)
+  const [aboutVisible, setAboutVisible] = React.useState(false)
   const [placement] = React.useState<DrawerProps['placement']>('left')
 
   // other hooks
@@ -55,6 +57,22 @@ const ZLHeader = () => {
       ]}
     />
   )
+  const showProductMenu = () => {
+    setProductVisible(!productVisible)
+  }
+  const showAboutMenu = () => {
+    setAboutVisible(!aboutVisible)
+  }
+  const toProductPath = (path: string) => {
+    setProductVisible(false)
+    setVisible(false)
+    navigate(path)
+  }
+  const toAboutPath = (path: string) => {
+    setAboutVisible(false)
+    setVisible(false)
+    navigate(path)
+  }
 
   return (
     <header className={style.zlHeaderWrapper}>
@@ -103,29 +121,56 @@ const ZLHeader = () => {
         onClose={closeMenu}
         width="85%"
         getContainer="#root"
+        destroyOnClose={true}
       >
-        <ul className="antd-ul">
-          <li className="antd-li" onClick={() => toLocation('/')}>
-            <span>首页</span>
-            <span>&gt;</span>
-          </li>
-          <li className="antd-li" onClick={() => toLocation('/product')}>
-            <span>产品与服务</span>
-            <span>&gt;</span>
-          </li>
-          <li className="antd-li" onClick={() => toLocation('/about')}>
-            <span>关于我们</span>
-            <span>&gt;</span>
-          </li>
+        <div className="antd-ul">
+          <dl className="antd-li" onClick={() => toLocation('/')}>
+            <dt className="antd-dt">
+              <span>首页</span>
+            </dt>
+          </dl>
+          <dl className="antd-li">
+            <dt className="antd-dt" onClick={showProductMenu}>
+              <span>产品与服务</span>
+              <span>{productVisible ? <UpOutlined /> : <DownOutlined />}</span>
+            </dt>
+            <dd className={productVisible ? 'open' : 'close'}>
+              <ul>
+                <li onClick={() => toProductPath('/finance')}>
+                  <p>金融服务与数字化转型</p>
+                </li>
+                <li onClick={() => toProductPath('/solution')}>
+                  <p>区块链技术与行业解决方案</p>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <dl className="antd-li">
+            <dt className="antd-dt" onClick={showAboutMenu}>
+              <span>关于我们</span>
+              <span>{aboutVisible ? <UpOutlined /> : <DownOutlined />}</span>
+            </dt>
+            <dd className={aboutVisible ? 'open' : 'close'}>
+              <ul>
+                <li onClick={() => toAboutPath('/intro')}>
+                  <p>公司简介</p>
+                </li>
+                <li onClick={() => toAboutPath('/staff')}>
+                  <p>员工概况</p>
+                </li>
+              </ul>
+            </dd>
+          </dl>
           {/* <li className="antd-li" onClick={() => toLocation('/dynamic')}>
             <span>公司动态</span>
             <span>&gt;</span>
           </li> */}
           <li className="antd-li" onClick={() => toLocation('/concat')}>
-            <span>联系我们</span>
-            <span>&gt;</span>
+            <dt className="antd-dt">
+              <span>联系我们</span>
+            </dt>
           </li>
-        </ul>
+        </div>
       </Drawer>
     </header>
   )
